@@ -207,28 +207,33 @@ output.grid(row = 0,
 # |||||||||||||||||||||||||||||||||||||||||||||||||||| #
 # |||           CONSTRUCTING THE BUTTONS           ||| #
 # |||||||||||||||||||||||||||||||||||||||||||||||||||| #
-button_ones = Button(root, text = "1"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(1))
-button_twos = Button(root, text = "2"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(2))
-button_tree = Button(root, text = "3"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(3))
-button_four = Button(root, text = "4"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(4))
-button_five = Button(root, text = "5"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(5))
-button_seex = Button(root, text = "6"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(6))
-button_sevn = Button(root, text = "7"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(7))
-button_eigt = Button(root, text = "8"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(8))
-button_nine = Button(root, text = "9"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(9))
-button_zero = Button(root, text = "0"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(0))
 button_perc = Button(root, text = "% " , padx = 23, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = perc)
 button_ClEn = Button(root, text = "CE ", padx = 20, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = clearEn)
 button_Clea = Button(root, text = "C " , padx = 25, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = clear)
 button_back = Button(root, text = "Del", padx = 19, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = delete)
+
 button_repr = Button(root, text = "¹/𝑥", padx = 23, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = reciprocal)
 button_sqre = Button(root, text = "𝑥²" , padx = 25, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = square)
 button_sqrt = Button(root, text = "√𝑥 ", padx = 21, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = squareroot)
 button_divi = Button(root, text = "÷"  , padx = 28, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = division)
+
+button_sevn = Button(root, text = "7"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(7))
+button_eigt = Button(root, text = "8"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(8))
+button_nine = Button(root, text = "9"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(9))
 button_mult = Button(root, text = "×"  , padx = 28, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = mult)
+
+button_four = Button(root, text = "4"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(4))
+button_five = Button(root, text = "5"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(5))
+button_seex = Button(root, text = "6"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(6))
 button_subt = Button(root, text = "−"  , padx = 28, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = subtraction)
+
+button_ones = Button(root, text = "1"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(1))
+button_twos = Button(root, text = "2"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(2))
+button_tree = Button(root, text = "3"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(3))
 button_addn = Button(root, text = "+"  , padx = 28, pady = 8, font = ("Calibri 15 bold"), bg = '#323232', fg = '#fff', borderwidth = 0, command = addition)
+
 button_nega = Button(root, text = "⁺∕₋", padx = 22, pady = 8, font = ("Calibri 15 bold"), bg = '#111111', fg = '#fff', borderwidth = 0, command = negate)
+button_zero = Button(root, text = "0"  , padx = 28, pady = 8, font = ('Calibri 15 bold'), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number(0))
 button_adot = Button(root, text = ". " , padx = 28, pady = 8, font = ("Calibri 15 bold"), bg = '#111111', fg = '#fff', borderwidth = 0, command = lambda: number('.'))
 button_eqal = Button(root, text = "="  , padx = 28, pady = 8, font = ("Calibri 15 bold"), bg = '#996b33', fg = '#fff', borderwidth = 0, command = eqal)
 
